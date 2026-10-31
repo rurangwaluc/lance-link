@@ -1,3 +1,5 @@
+import WhatsAppIcon from "./whatsapp-icon";
+
 export default function HomeContact() {
   return (
     <section
@@ -21,7 +23,7 @@ export default function HomeContact() {
           aria-label="Request a quote on WhatsApp"
         >
           Request a Quote
-          <span aria-hidden="true">→</span>
+          <WhatsAppIcon />
         </a>
       </div>
     </section>
