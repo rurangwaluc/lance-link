@@ -53,7 +53,7 @@ export default function HomeExperience() {
           </p>
 
           <h2 id="experience-heading">
-            50+ Completed Projects
+            30+ Completed Projects
           </h2>
 
           <div
