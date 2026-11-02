@@ -16,11 +16,11 @@ const services: {
     icon: "design",
   },
   {
-    title: "Construction Management and Supervision",
+    title: "Project Management and Supervision",
     icon: "supervision",
   },
   {
-    title: "Building Construction, Maintenance, and Rehabilitation",
+    title: "Building Development, Maintenance, and Rehabilitation",
     icon: "building",
   },
   {

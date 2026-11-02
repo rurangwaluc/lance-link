@@ -4,8 +4,8 @@ import SiteFooter from "@/components/site-footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lance Link | Construction & Architecture",
-  description: "Architectural design, building construction, construction supervision, and renovation services from Lance Link.",
+  title: "Lance Link | Engineering & Architecture",
+  description: "Architectural design, engineering, project supervision, and renovation services from Lance Link.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

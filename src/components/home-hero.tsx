@@ -15,7 +15,7 @@ export default function HomeHero() {
         </h1>
 
         <p className="ll-hero__description">
-          Architectural design, construction,
+          Architectural design, engineering,
           supervision and renovation services
           for residential and commercial
           projects in Rwanda.

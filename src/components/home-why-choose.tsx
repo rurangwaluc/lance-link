@@ -7,7 +7,7 @@ const reasons = [
   {
     title: "Integrated Project Delivery",
     description:
-      "From initial design and planning to construction and final handover, we coordinate every stage to ensure seamless project execution.",
+      "From initial design and planning to project delivery and final handover, we coordinate every stage to ensure seamless project execution.",
   },
   {
     title: "Commitment to Quality",

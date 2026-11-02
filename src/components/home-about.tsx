@@ -22,7 +22,7 @@ export default function HomeAbout() {
           <div className="ll-about__accent" aria-hidden="true" />
           <p>
             We are a Rwanda-based engineering
-            company delivering end-to-end design and construction
+            company delivering end-to-end design and engineering
             solutions with a focus on quality, innovation and
             client satisfaction.
           </p>

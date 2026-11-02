@@ -62,7 +62,7 @@ export default function HomeExperience() {
           />
 
           <p>
-            Discover Lance Link&apos;s engineering, construction,
+            Discover Lance Link&apos;s engineering, project management,
             and project management services.
           </p>
 
