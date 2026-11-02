@@ -21,9 +21,10 @@ export default function HomeAbout() {
           <h2 id="ll-about-heading">About Lance Link</h2>
           <div className="ll-about__accent" aria-hidden="true" />
           <p>
-            We are a Rwanda-based construction and architectural
-            company delivering end-to-end building solutions with
-            a focus on quality, innovation and client satisfaction.
+            We are a Rwanda-based construction and engineering
+            company delivering end-to-end design and construction
+            solutions with a focus on quality, innovation and
+            client satisfaction.
           </p>
           <a href="/about" className="ll-about__link">
             Learn More <span aria-hidden="true">→</span>
