@@ -34,8 +34,8 @@ export default function SiteFooter() {
             <a className="ll-footer__phone" href="tel:+250788328626">
               +250 788 328 626
             </a>
-            <a href="mailto:info@lancelink.com">
-              info@lancelink.com
+            <a href="mailto:info@lancelink.site">
+              info@lancelink.site
             </a>
           </div>
         </div>

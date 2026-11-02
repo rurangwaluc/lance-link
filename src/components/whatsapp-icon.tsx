@@ -5,7 +5,7 @@ export default function WhatsAppIcon() {
       viewBox="0 0 32 32"
       width="18"
       height="18"
-      fill="currentColor"
+      fill="#25D366"
       aria-hidden="true"
       focusable="false"
     >
