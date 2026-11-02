@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const projects = [
-  ["Residential Design Example", "Residential Architecture", 1],
-  ["Commercial Design Example", "Commercial Architecture", 2],
-  ["Apartment Design Example", "Residential Development", 3],
-  ["Villa Design Example", "Residential Architecture", 4],
-  ["Office Design Example", "Commercial Development", 5],
-  ["Renovation Example", "Renovation & Remodeling", 6],
+  ["Residential Design", "Residential Architecture", 1],
+  ["Commercial Design", "Commercial Architecture", 2],
+  ["Apartment Design", "Residential Development", 3],
+  ["Villa Design", "Residential Architecture", 4],
+  ["Office Design", "Commercial Development", 5],
+  ["Renovation & Rehabilitation", "Renovation & Remodeling", 6],
 ] as const;
 
 export default function HomeProjects() {
@@ -48,9 +48,6 @@ export default function HomeProjects() {
             );
           })}
         </div>
-        <p className="ll-projects__notice">
-          Illustrative images only; these are not verified Lance Link projects.
-        </p>
       </div>
     </section>
   );
