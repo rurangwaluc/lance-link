@@ -2,22 +2,22 @@ const reasons = [
   {
     title: "Engineering Expertise",
     description:
-      "Architectural, structural, geotechnical, and MEP solutions for diverse project needs.",
+      "We bring together technical knowledge and innovative engineering solutions to deliver safe, functional, and sustainable building projects.",
   },
   {
     title: "Integrated Project Delivery",
     description:
-      "Coordinated design, construction, management, and supervision services.",
+      "From initial design and planning to construction and final handover, we coordinate every stage to ensure seamless project execution.",
   },
   {
     title: "Commitment to Quality",
     description:
-      "A focus on thoughtful planning, technical precision, and reliable project execution.",
+      "We uphold high standards through quality materials, precise workmanship, and strict attention to technical specifications at every stage.",
   },
   {
     title: "Client-Focused Approach",
     description:
-      "Clear communication and solutions tailored to each project's requirements.",
+      "We put our clients first by understanding their needs, providing practical solutions, and maintaining transparency throughout every project.",
   },
 ] as const;
 
