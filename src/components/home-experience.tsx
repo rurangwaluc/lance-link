@@ -1,6 +1,8 @@
+import { getTranslations, type Language } from "@/lib/lance-link-i18n";
 import Image from "next/image";
 
-export default function HomeExperience() {
+export default function HomeExperience({ language }: { language: Language }) {
+  const t = getTranslations(language);
   return (
     <section
       className="ll-experience"
@@ -11,18 +13,18 @@ export default function HomeExperience() {
         <div className="ll-experience__map">
           <Image
             src="/assets/rwanda-provinces.svg"
-            alt="Map showing the provinces of Rwanda"
+            alt={language === "rw" ? "Ikarita y’intara z’u Rwanda" : "Map showing the provinces of Rwanda"}
             width={682}
             height={598}
             className="ll-experience__map-image"
           />
           <div className="ll-experience__markers" aria-hidden="true">
             {[
-              { name: "Northern", x: 51, y: 27 },
-              { name: "Western", x: 25, y: 47 },
-              { name: "Kigali City", x: 54, y: 48 },
-              { name: "Eastern", x: 75, y: 46 },
-              { name: "Southern", x: 39, y: 75 },
+              { name: t.experience.northern, x: 51, y: 27 },
+              { name: t.experience.western, x: 25, y: 47 },
+              { name: t.experience.kigali, x: 54, y: 48 },
+              { name: t.experience.eastern, x: 75, y: 46 },
+              { name: t.experience.southern, x: 39, y: 75 },
             ].map((marker) => (
               <span
                 key={marker.name}
@@ -49,11 +51,11 @@ export default function HomeExperience() {
 
         <div className="ll-experience__content">
           <p className="ll-experience__eyebrow">
-            Our Experience
+            {t.experience.eyebrow}
           </p>
 
           <h2 id="experience-heading">
-            30+ Completed Projects
+            {t.experience.completed}
           </h2>
 
           <div
@@ -61,13 +63,10 @@ export default function HomeExperience() {
             aria-hidden="true"
           />
 
-          <p>
-            Discover Lance Link&apos;s engineering, project management,
-            and project management services.
-          </p>
+          <p>{t.experience.description}</p>
 
           <a href="#about">
-            About Lance Link
+            {t.experience.about}
           </a>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { getTranslations, type Language } from "@/lib/lance-link-i18n";
 import type { ReactNode } from "react";
 
 type ServiceKind =
@@ -8,27 +9,27 @@ type ServiceKind =
   | "mep";
 
 const services: {
-  title: string;
+  title: number;
   icon: ServiceKind;
 }[] = [
   {
-    title: "Architectural and Structural Design",
+    title: 0,
     icon: "design",
   },
   {
-    title: "Project Management and Supervision",
+    title: 1,
     icon: "supervision",
   },
   {
-    title: "Building Development, Maintenance, and Rehabilitation",
+    title: 2,
     icon: "building",
   },
   {
-    title: "Geotechnical Engineering and Site Investigation",
+    title: 3,
     icon: "geotechnical",
   },
   {
-    title: "Mechanical, Electrical and Plumbing (MEP)",
+    title: 4,
     icon: "mep",
   },
 ];
@@ -92,7 +93,8 @@ function ServiceIcon({ kind }: { kind: ServiceKind }) {
   );
 }
 
-export default function HomeServices() {
+export default function HomeServices({ language }: { language: Language }) {
+  const t = getTranslations(language);
   return (
     <section
       className="ll-services"
@@ -103,11 +105,11 @@ export default function HomeServices() {
         <div className="ll-services__intro">
           <p className="ll-services__eyebrow">
             <span aria-hidden="true" />
-            What We Do
+            {t.services.eyebrow}
           </p>
 
           <h2 id="ll-services-title">
-            Our <span>Services</span>
+            {language === "en" ? <>Our <span>Services</span></> : t.services.title}
           </h2>
 
           <div className="ll-services__underline" aria-hidden="true" />
@@ -119,13 +121,13 @@ export default function HomeServices() {
           {services.map((service) => (
             <article
               className="ll-services__card"
-              key={service.title}
+              key={service.icon}
             >
               <div className="ll-services__icon">
                 <ServiceIcon kind={service.icon} />
               </div>
 
-              <h3>{service.title}</h3>
+              <h3>{t.services.items[service.title]}</h3>
 
               <span
                 className="ll-services__card-line"

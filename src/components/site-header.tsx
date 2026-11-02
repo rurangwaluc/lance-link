@@ -1,19 +1,22 @@
 "use client";
 
+import { getTranslations, getWhatsAppUrl, type Language } from "@/lib/lance-link-i18n";
+
 import Image from "next/image";
 import Link from "next/link";
 import WhatsAppIcon from "./whatsapp-icon";
 import { useEffect, useState } from "react";
 
-const links = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Contact", href: "/#contact" },
-] as const;
-
-export default function SiteHeader() {
+export default function SiteHeader({ language }: { language: Language }) {
+  const t = getTranslations(language);
+  const base = language === "rw" ? "/rw" : "/";
+  const links = [
+    { label: t.navigation.home, href: base },
+    { label: t.navigation.about, href: `${base}#about` },
+    { label: t.navigation.services, href: `${base}#services` },
+    { label: t.navigation.projects, href: `${base}#projects` },
+    { label: t.navigation.contact, href: `${base}#contact` },
+  ];
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -32,7 +35,7 @@ export default function SiteHeader() {
       <div className="site-header__inner">
         <Link
           className="site-header__brand"
-          href="/"
+          href={base}
           aria-label="Lance Link, home"
           onClick={() => setMenuOpen(false)}
         >
@@ -50,23 +53,36 @@ export default function SiteHeader() {
             <Link
               key={label}
               href={href}
-              aria-current={label === "Home" ? "page" : undefined}
-              className={label === "Home" ? "is-active" : undefined}
+              aria-current={label === t.navigation.home ? "page" : undefined}
+              className={label === t.navigation.home ? "is-active" : undefined}
             >
               {label}
             </Link>
           ))}
         </nav>
 
-        <Link className="site-header__quote" href="https://wa.me/250788328626?text=Hello%20Lance%20Link%2C%20I%20would%20like%20to%20request%20a%20consultation%20or%20quotation%20for%20an%20engineering%20or%20construction%20project.%20Please%20let%20me%20know%20how%20we%20can%20proceed.%20Thank%20you." target="_blank" rel="noopener noreferrer">
-          Request a Quote
+        <div className="site-header__actions">
+          <nav className="ll-language" aria-label="Website language">
+            <Link href="/" hrefLang="en" lang="en" aria-label="Switch to English" aria-current={language === "en" ? "true" : undefined} className={language === "en" ? "is-selected" : ""}>
+              <span className="ll-language__flag" aria-hidden="true">🇬🇧</span>
+              <span>EN</span>
+            </Link>
+            <span className="ll-language__separator" aria-hidden="true">/</span>
+            <Link href="/rw" hrefLang="rw" lang="rw" aria-label="Hindura mu Kinyarwanda" aria-current={language === "rw" ? "true" : undefined} className={language === "rw" ? "is-selected" : ""}>
+              <span className="ll-language__flag" aria-hidden="true">🇷🇼</span>
+              <span>RW</span>
+            </Link>
+          </nav>
+        <Link className="site-header__quote" href={getWhatsAppUrl(language)} target="_blank" rel="noopener noreferrer">
+          {t.navigation.quote}
           <WhatsAppIcon />
         </Link>
+        </div>
 
         <button
           className="site-header__menu-button"
           type="button"
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={menuOpen ? (language === "rw" ? "Funga menu" : "Close navigation menu") : (language === "rw" ? "Fungura menu" : "Open navigation menu")}
           aria-controls="lance-link-mobile-navigation"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((value) => !value)}
@@ -94,8 +110,8 @@ export default function SiteHeader() {
           <Link
             key={label}
             href={href}
-            aria-current={label === "Home" ? "page" : undefined}
-            className={label === "Home" ? "is-active" : undefined}
+            aria-current={label === t.navigation.home ? "page" : undefined}
+            className={label === t.navigation.home ? "is-active" : undefined}
             onClick={() => setMenuOpen(false)}
           >
             {label}
@@ -103,10 +119,10 @@ export default function SiteHeader() {
         ))}
         <Link
           className="site-header__mobile-quote"
-          href="https://wa.me/250788328626?text=Hello%20Lance%20Link%2C%20I%20would%20like%20to%20request%20a%20consultation%20or%20quotation%20for%20an%20engineering%20or%20construction%20project.%20Please%20let%20me%20know%20how%20we%20can%20proceed.%20Thank%20you." target="_blank" rel="noopener noreferrer"
+          href={getWhatsAppUrl(language)} target="_blank" rel="noopener noreferrer"
           onClick={() => setMenuOpen(false)}
         >
-          Request a Quote <WhatsAppIcon />
+          {t.navigation.quote} <WhatsAppIcon />
         </Link>
       </nav>
     </header>

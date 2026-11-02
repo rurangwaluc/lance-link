@@ -1,6 +1,8 @@
+import { getTranslations, type Language } from "@/lib/lance-link-i18n";
 import Image from "next/image";
 
-export default function HomeAbout() {
+export default function HomeAbout({ language }: { language: Language }) {
+  const t = getTranslations(language);
   return (
     <section className="ll-about" id="about"
       aria-labelledby="ll-about-heading">
@@ -9,7 +11,7 @@ export default function HomeAbout() {
           <div className="ll-about__frame">
             <Image
               src="/assets/lance-link-about-photo.png"
-              alt="Illustrative contemporary building"
+              alt={language === "rw" ? "Ishusho y’inyubako igezweho" : "Illustrative contemporary building"}
               fill
               sizes="(max-width: 640px) 90vw, (max-width: 900px) 42vw, 470px"
               className="ll-about__image"
@@ -18,16 +20,11 @@ export default function HomeAbout() {
         </div>
 
         <div className="ll-about__copy">
-          <h2 id="ll-about-heading">About Lance Link</h2>
+          <h2 id="ll-about-heading">{t.about.title}</h2>
           <div className="ll-about__accent" aria-hidden="true" />
-          <p>
-            We are a Rwanda-based engineering
-            company delivering end-to-end design and engineering
-            solutions with a focus on quality, innovation and
-            client satisfaction.
-          </p>
-          <a href="/about" className="ll-about__link">
-            Learn More <span aria-hidden="true">→</span>
+          <p>{t.about.description}</p>
+          <a href="#experience" className="ll-about__link">
+            {t.about.more} <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
