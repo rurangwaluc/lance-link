@@ -148,11 +148,11 @@ export const translations = {
       eyebrow: "Ibyo dukora",
       title: "Serivisi zacu",
       items: [
-        "Gushushanya inyubako no gukora ibishushanyo by'imiterere yazo",
-        "Gucunga imishinga no kugenzura imirimo",
-        "Guteza imbere, gufata neza no kuvugurura inyubako",
-        "Ubushakashatsi ku butaka no gusuzuma ahazashyirwa inyubako",
-        "Sisitemu z'imashini, amashanyarazi n'amazi (MEP)",
+        "Gushushanya amazu no gushaka ibyangombwa byo kubaka",
+        "Kugenzura no kuyobora imishinga y'ubwubatsi",
+        "Kuvugurura no gusana amazu",
+        "Ubujyanama ku mikoreshereze y'ubutaka no gufata ibipimo byose bikenewe",
+        "Gukora ku by'amazi n'amashanyarazi",
       ],
     },
     why: {
