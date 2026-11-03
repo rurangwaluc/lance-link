@@ -181,7 +181,7 @@ export const translations = {
       ],
     },
     projects: {
-      title: "Imishinga Twakoze mo",
+      title: "Imishinga Twakoze",
       all: "Reba imishinga yose",
       preview: "Reba ishusho",
       items: [
@@ -196,7 +196,7 @@ export const translations = {
     contact: {
       title: "Dufatanye gushyira mu bikorwa umushinga wawe",
       description:
-        "Twandikire tuganire tujye inama ku mushinga wawe.",
+        "Twandikire dutegurane umushinga wawe",
     },
     footer: {
       tagline:
@@ -205,7 +205,7 @@ export const translations = {
       rights: "Uburenganzira bwose burabitswe.",
     },
     seo: {
-      title: "Lance Link | Ubuhanga n'Igishushanyo cy'Inyubako",
+      title: "Lance Link | Ubaka uteganyiriza ahazaza",
       description:
         "Serivisi zo gushushanya inyubako, ubuhanga mu by'inyubako, kugenzura imishinga no kuvugurura inyubako mu Rwanda.",
     },
