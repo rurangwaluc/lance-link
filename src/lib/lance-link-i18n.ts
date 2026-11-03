@@ -159,24 +159,24 @@ export const translations = {
       title: "Kuki wahitamo Lance Link?",
       items: [
         {
-          title: "Ubumenyi mu by'ubuhanga",
+          title: "Uburambe mu bwubatsi",
           description:
-            "Duhuza ubumenyi bwa tekiniki n'ibisubizo bishya kugira ngo dutange imishinga y'inyubako itekanye, ikora neza kandi irambye.",
+            "Uburambe n'ubumenyi dufite byadufashije gukora inyigo z'imishinga itandukanye ndetse iyo mishinga ikagera ku ntego yari igenewe.",
         },
         {
-          title: "Gukurikirana umushinga kuva utangiye kugeza urangiye",
+          title: "Ibisubizo ku mishinga y'ubwubatsi",
           description:
-            "Kuva ku gishushanyo n'igenamigambi kugeza ku ishyirwa mu bikorwa no gushyikiriza umukiriya umushinga, duhuza ibyiciro byose by'imirimo.",
+            "Ubunararibonye bwacu budufasha mu igenamigambi ry'imishinga ndetse no guteganya ibisubizo mu gihe kizaza",
         },
         {
-          title: "Gushyira imbere ubuziranenge",
+          title: "Twita ku burambe bw'inyubako",
           description:
-            "Twita ku bikoresho byiza, imikorere inoze no kubahiriza ibisabwa bya tekiniki muri buri cyiciro cy'umushinga.",
+            "Dushyira imbere amahitamo meza y'ibikoresho bikoreshwa ku nyubako ndetse tunamenya neza ko imirimo ikorwa n'ababifitiye ubushobozi ari nako twubahiriza amategeko n'amabwiriza bigenga umwuga w'ubwubatsi",
         },
         {
-          title: "Guha agaciro umukiriya",
+          title: "Duha agaciro umukiriya",
           description:
-            "Twumva ibyo abakiriya bakeneye, tukabaha ibisubizo biboneye kandi tugakorana na bo mu mucyo mu gihe cyose cy'umushinga.",
+            "Dutega amatwi ibyifuzo by'umukiriya ndetse tugatanga n'ibisubizo biboneye ku mishinga y'ubwubatsi. Tuzwiho kuba hafi y'abo dukorana.",
         },
       ],
     },
