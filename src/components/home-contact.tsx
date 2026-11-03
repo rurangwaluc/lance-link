@@ -22,7 +22,7 @@ export default function HomeContact({ language }: { language: Language }) {
         <a
           className="ll-contact__button"
           href={getWhatsAppUrl(language)} target="_blank" rel="noopener noreferrer"
-          aria-label={t.navigation.quote + " on WhatsApp"}
+          aria-label={`${t.navigation.quote} ${language === "rw" ? "kuri WhatsApp" : "on WhatsApp"}`}
         >
           {t.navigation.quote}
           <WhatsAppIcon />

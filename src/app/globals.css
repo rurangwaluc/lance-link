@@ -2328,3 +2328,69 @@ body { margin: 0; background: #fff; color: var(--ll-text); font-family: Arial, H
     overflow-wrap: normal;
   }
 }
+
+
+/* Lance Link STEP 21E — responsive projects heading */
+.ll-projects__heading {
+  min-width: 0;
+}
+
+.ll-projects__heading h2 {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+
+@media (max-width: 768px) {
+  .ll-projects__heading {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px 20px;
+  }
+
+  .ll-projects__heading h2 {
+    font-size: clamp(25px, 5vw, 34px);
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .ll-projects__heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .ll-projects__heading h2 {
+    font-size: clamp(24px, 6.5vw, 30px);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Lance Link STEP 22D — responsive contact heading */
+.ll-contact__copy {
+  min-width: 0;
+}
+
+.ll-contact__copy #contact-heading {
+  max-width: 100%;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .ll-contact__copy #contact-heading {
+    font-size: clamp(26px, 5vw, 36px);
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+  }
+}
+
+@media (max-width: 480px) {
+  .ll-contact__copy #contact-heading {
+    font-size: clamp(24px, 6.2vw, 30px);
+    line-height: 1.22;
+  }
+}

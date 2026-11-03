@@ -1,5 +1,13 @@
 "use client";
 
+/* eslint-disable @next/next/no-html-link-for-pages */
+/*
+ * Language links intentionally trigger full document navigation.
+ * The server root layout derives its language from the request path.
+ * Other internal links continue using Next.js Link.
+ */
+
+
 import { getTranslations, getWhatsAppUrl, type Language } from "@/lib/lance-link-i18n";
 
 import Image from "next/image";
@@ -63,15 +71,17 @@ export default function SiteHeader({ language }: { language: Language }) {
 
         <div className="site-header__actions">
           <nav className="ll-language" aria-label="Website language">
-            <Link href="/" hrefLang="en" lang="en" aria-label="Switch to English" aria-current={language === "en" ? "true" : undefined} className={language === "en" ? "is-selected" : ""}>
+            <a
+              href="/" hrefLang="en" lang="en" aria-label="Switch to English" aria-current={language === "en" ? "true" : undefined} className={language === "en" ? "is-selected" : ""}>
               <span className="ll-language__flag" aria-hidden="true">🇬🇧</span>
               <span>EN</span>
-            </Link>
+            </a>
             <span className="ll-language__separator" aria-hidden="true">/</span>
-            <Link href="/rw" hrefLang="rw" lang="rw" aria-label="Hindura mu Kinyarwanda" aria-current={language === "rw" ? "true" : undefined} className={language === "rw" ? "is-selected" : ""}>
+            <a
+              href="/rw" hrefLang="rw" lang="rw" aria-label="Hindura mu Kinyarwanda" aria-current={language === "rw" ? "true" : undefined} className={language === "rw" ? "is-selected" : ""}>
               <span className="ll-language__flag" aria-hidden="true">🇷🇼</span>
               <span>RW</span>
-            </Link>
+            </a>
           </nav>
         <Link className="site-header__quote" href={getWhatsAppUrl(language)} target="_blank" rel="noopener noreferrer">
           {t.navigation.quote}

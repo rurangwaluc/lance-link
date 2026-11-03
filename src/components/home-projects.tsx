@@ -9,7 +9,6 @@ export default function HomeProjects({ language }: { language: Language }) {
       <div className="ll-projects__inner">
         <div className="ll-projects__heading">
           <h2 id="projects-heading">{t.projects.title}</h2>
-          <span>{t.projects.all} →</span>
         </div>
 
         <div className="ll-projects__grid">
@@ -22,7 +21,7 @@ export default function HomeProjects({ language }: { language: Language }) {
                   <Image src={src} alt={language === "rw" ? `Ishusho: ${category}` : `${category} illustration`}
                     fill sizes="(max-width: 768px) 85vw, 33vw" />
                   <div className="ll-projects__overlay">
-                    <p>{category}</p>
+
                     <h3>{title}</h3>
                     <a href={src} target="_blank"
                       rel="noopener noreferrer">
@@ -31,7 +30,7 @@ export default function HomeProjects({ language }: { language: Language }) {
                   </div>
                 </div>
                 <div className="ll-projects__touch">
-                  <p>{category}</p>
+
                   <h3>{title}</h3>
                   <a href={src} target="_blank"
                     rel="noopener noreferrer">
