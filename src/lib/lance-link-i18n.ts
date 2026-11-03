@@ -31,7 +31,7 @@ export const translations = {
       eyebrow: "Our Experience",
       completed: "30+ Completed Projects",
       description:
-        "Discover Lance Link's engineering, project supervision and management services.",
+        "We have successfully completed over 30 projects across Rwanda, with experience spanning all five provinces: Northern, Southern, Eastern, and Western Provinces, as well as Kigali City.",
       about: "About Lance Link",
       northern: "Northern",
       western: "Western",
@@ -136,7 +136,7 @@ export const translations = {
       eyebrow: "Uburambe bwacu",
       completed: "Imishinga irenga 30 yarangiye",
       description:
-        "Menya serivisi za Lance Link mu by'ubuhanga bw'inyubako, gucunga imishinga no kugenzura ishyirwa mu bikorwa ryayo.",
+        "Twakoze ku mishinga itandukanye irenga 30 mu ntara zose ndetse no mu mugi wa Kigali",
       about: "Menya Lance Link",
       northern: "Amajyaruguru",
       western: "Iburengerazuba",
