@@ -118,8 +118,8 @@ export const translations = {
     hero: {
       eyebrow: "Twubaka ejo hazaza",
       line1: "Ibisubizo",
-      line2: "mu by'ubuhanga",
-      line3: "mu nyubako",
+      line2: "Mu By'Ubuhanga",
+      line3: "Mu Nyubako",
       highlight: "Wakwizera.",
       description:
         "Dutanga serivisi zo gushushanya inyubako, ubuhanga mu by'inyubako, kugenzura imirimo no kuvugurura inyubako z'imiturire n'iz'ubucuruzi mu Rwanda.",
@@ -127,9 +127,9 @@ export const translations = {
       contact: "Twandikire",
     },
     about: {
-      title: "Menya Lance Link",
+      title: "Icyo Wamenya Kuri Lance Link",
       description:
-        "Turi sosiyete yo mu Rwanda ikora mu by'ubuhanga bw'inyubako. Dutanga serivisi zuzuye zo gushushanya no gutegura imishinga, dushyize imbere ubuziranenge, udushya no kunyurwa kw'abakiriya.",
+        "Dutanga service z'ubwubatsi zirimo: gukora inyigo z'amazu, ubugenzuzi ku nyubako ziri kubakwa ndetse no kuvugurura amazu",
       more: "Menya byinshi",
     },
     experience: {
