@@ -46,7 +46,7 @@ export default function SiteFooter({ language }: { language: Language }) {
             ))}
           </nav>
           <p className="ll-footer__developer">
-            Developed by{" "}
+            {language === "rw" ? "Urubuga rwakozwe na" : "Developed by"}{" "}
             <a
               href="https://webimpactlab.com"
               target="_blank"
