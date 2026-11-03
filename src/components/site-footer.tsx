@@ -45,7 +45,19 @@ export default function SiteFooter({ language }: { language: Language }) {
               <Link href={href} key={label}>{label}</Link>
             ))}
           </nav>
-          <p>© {new Date().getFullYear()} Lance Link. {t.footer.rights}</p>
+          <p className="ll-footer__developer">
+            Developed by{" "}
+            <a
+              href="https://webimpactlab.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WebImpact Lab
+            </a>
+          </p>
+          <p className="ll-footer__copyright">
+            © {new Date().getFullYear()} Lance Link. {t.footer.rights}
+          </p>
         </div>
       </div>
     </footer>
