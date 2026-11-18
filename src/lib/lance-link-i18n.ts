@@ -117,9 +117,9 @@ export const translations = {
     },
     hero: {
       eyebrow: "Twubaka ejo hazaza",
-      line1: "Ibisubizo",
-      line2: "Mu By'Ubuhanga",
-      line3: "Mu Nyubako",
+      line1: "Igisubuzo",
+      line2: "Ku Nyubako",
+      line3: "",
       highlight: "Wakwizera.",
       description:
         "Dutanga serivisi zo gushushanya inyubako, ubuhanga mu by'inyubako, kugenzura imirimo no kuvugurura inyubako z'imiturire n'iz'ubucuruzi mu Rwanda.",
@@ -190,7 +190,7 @@ export const translations = {
         ["Amacumbi (Apartment)", "Iterambere ry'imiturire"],
         ["Imidugudu y'ikitegererezo", "Inyubako z'imiturire"],
         ["Inzu zo gukorera mo (Office)", "Inyubako z'ubucuruzi"],
-        ["Kuvugura amazu", "Gusana no kuvugurura"],
+        ["Kuvugurura amazu", "Gusana no kuvugurura"],
       ],
     },
     contact: {

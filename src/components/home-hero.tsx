@@ -9,7 +9,7 @@ export default function HomeHero({ language }: { language: Language }) {
           <br />
           {t.hero.line2}
           <br />
-          {t.hero.line3} <span>{t.hero.highlight}</span>
+          {t.hero.line3 ? `${t.hero.line3} ` : ""}<span>{t.hero.highlight}</span>
         </h1>
 
       </div>
